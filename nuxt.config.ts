@@ -9,5 +9,8 @@ export default defineNuxtConfig({
       apiKey: 'placeholder',
       secretKey: 'placeholder'
     }
+  },
+  typescript: {
+    typeCheck: true
   }
 })
