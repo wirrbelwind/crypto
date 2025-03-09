@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['nuxt-quasar-ui']
+  modules: ['nuxt-quasar-ui'],
+
+  runtimeConfig: {
+    public: {
+      apiKey: 'placeholder',
+      secretKey: 'placeholder'
+    }
+  }
 })
