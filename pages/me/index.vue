@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const { data, error } = useFetch("/api/account");
+</script>
+
 <template>
-    <h1>me page</h1>
+    {{ data }}
+    <h1>--------</h1>
+    {{ error }}
 </template>
