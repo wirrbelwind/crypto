@@ -12,11 +12,13 @@
   "dependencies": {
     "@binance/connector-typescript": "^0.3.15",
     "@nuxt/eslint": "1.2.0",
+    "@pinia/nuxt": "0.10.1",
     "@quasar/extras": "^1.16.17",
     "crypto-js": "^4.2.0",
     "eslint": "^9.0.0",
     "nuxt": "^3.16.0",
     "nuxt-quasar-ui": "2.1.12",
+    "pinia": "^3.0.1",
     "quasar": "^2.18.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['nuxt-quasar-ui', '@nuxt/eslint'],
+  modules: ['nuxt-quasar-ui', '@nuxt/eslint', '@pinia/nuxt'],
 
   runtimeConfig: {
     public: {
