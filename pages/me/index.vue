@@ -14,23 +14,5 @@ const { data: status } = await useAsyncData('account-status', async () => {
 </script>
 
 <template>
-  <QLayout>
-    <q-page-container>
-      <div>
-        <p>UID</p>
-        <p>{{ account?.uid }}</p>
-        <p>Status: {{ status }}</p>
-      </div>
-
-      <q-banner class="" rounded inline-actions>
-        <template v-slot:action>
-          <q-btn flat label="Deposit" />
-          <q-btn flat label="Withdraw" />
-          <q-btn flat label="Cash In" />
-        </template>
-      </q-banner>
-
-      <Rates />
-    </q-page-container>
-  </QLayout>
+  <p></p>
 </template>
