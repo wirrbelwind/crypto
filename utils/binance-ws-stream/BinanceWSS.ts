@@ -1,6 +1,7 @@
 import { determineMessageCategory } from './determineMessageCategory'
 import type { BinanceMessage } from './types'
 
+// TODO: fix type safety for keys of handlers
 export interface ConstructorOptions {
   baseUrl: string
   url?: string
