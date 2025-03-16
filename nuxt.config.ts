@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['nuxt-quasar-ui', '@nuxt/eslint', '@pinia/nuxt'],
+  modules: ['nuxt-quasar-ui', '@nuxt/eslint', '@pinia/nuxt', '@nuxt/ui'],
 
   runtimeConfig: {
     public: {
@@ -12,5 +12,6 @@ export default defineNuxtConfig({
   },
   typescript: {
     typeCheck: true
-  }
+  },
+  css: ['~/assets/css/main.css']
 })
