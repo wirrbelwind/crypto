@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 interface AggregateTradeState {
   symbol: string
   _price: string
+  kline: string
 }
 
 export const useSymbolStore = defineStore('aggregate-trade', {
@@ -10,13 +11,13 @@ export const useSymbolStore = defineStore('aggregate-trade', {
     return {
       symbol: '<currency-symbol>',
       _price: '0',
+      kline: '',
     }
   },
-  actions: {
-  },
+  actions: {},
   getters: {
-    price: state => {
+    price: (state) => {
       return parseFloat(state._price).toFixed(3)
-    }
-  }
+    },
+  },
 })
