@@ -70,7 +70,7 @@ export class BinanceWSS {
     this.ws?.close()
   }
 
-  private subscribeTo(params: string[]) {
+  subscribeTo(params: string[]) {
     if (!this.ws) {
       throw new Error(
         'An attempt to subscribe to a stream without establishing a connection to the server.'
@@ -86,7 +86,7 @@ export class BinanceWSS {
     this.ws.send(JSON.stringify(message))
   }
 
-  aggTrade(symbol: string) {
-    this.subscribeTo([`${symbol}@aggTrade`])
-  }
+  // Subscriptions
+
+  
 }

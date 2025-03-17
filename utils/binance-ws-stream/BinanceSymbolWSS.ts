@@ -7,17 +7,16 @@ export class BinanceSymbolWSS extends BinanceWSS {
     baseArgs: Omit<ConstructorOptions, 'messageToHandlerKey'>
   ) {
     const args = {
-        ...baseArgs,
-        messageToHandlerKey: (message: BinanceMessage) => {
-          return message.e
-        },
-        
-      }
-      console.log(args)
+      ...baseArgs,
+      messageToHandlerKey: (message: BinanceMessage) => {
+        return message.e
+      },
+    }
+    console.log(args)
     super(args)
   }
 
-  override aggTrade(): void {
-    super.aggTrade(this.symbol)
+  aggTrade() {
+    this.subscribeTo([`${this.symbol}@aggTrade`])
   }
 }
