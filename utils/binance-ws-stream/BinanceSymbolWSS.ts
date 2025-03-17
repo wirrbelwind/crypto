@@ -19,4 +19,8 @@ export class BinanceSymbolWSS extends BinanceWSS {
   aggTrade() {
     this.subscribeTo([`${this.symbol}@aggTrade`])
   }
+
+  kline(amount: number, unit: 's' | 'm' | 'h' | 'd' | 'w' | 'M') {
+    this.subscribeTo([`${this.symbol}@kline_${amount}${unit}`])
+  }
 }
