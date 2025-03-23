@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@pinia/nuxt',
-    '@nuxt/ui',
     'nuxt-quasar-ui'
   ],
 
