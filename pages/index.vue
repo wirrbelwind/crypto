@@ -1,10 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <UContainer>
+  <div>
     <nav class="flex gap-5 text-lg">
       <NuxtLink to="/trade/btcusdt">BTC</NuxtLink>
       <NuxtLink to="/trade/ethusdt">ETH</NuxtLink>
     </nav>
-  </UContainer>
+
+    <SearchTrade />
+  </div>
 </template>
