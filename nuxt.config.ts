@@ -13,7 +13,5 @@ export default defineNuxtConfig({
       apiKey: 'placeholder',
       secretKey: 'placeholder'
     }
-  },
-  
-  css: ['~/assets/css/main.css']
+  }
 })
